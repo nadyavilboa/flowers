@@ -1,5 +1,27 @@
 .page-header {
     padding: 8px 0;
+    position: relative;
+
+    @media (min-width: $tablet-width) {
+        padding: 20px 0;
+    }
+}
+
+.page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-header__logo {
+    @media (min-width: $tablet-width) {
+        margin-right: 118px;
+    }
+
+    @media (min-width: $desktop-width) {
+        order: 1;
+        margin-right: 204px;
+    }
 }
 
 .page-header__logo img {
@@ -14,6 +36,16 @@
 
 .page-header__company-phone {
     font-family: $special-fonts;
+    padding: 8px;
+
+    @media (min-width: $tablet-width) {
+        padding: 16px 30px;
+        margin-right: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+        order: 3;
+    }
 }
 
 .page-header__company-phone,
@@ -33,6 +65,15 @@
     display: flex;
     align-items: center;
     font-family: $text-fonts;
+    padding: 8px;
+
+    @media (min-width: $tablet-width) {
+        margin-right: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+        display: none;
+    }
 }
 
 .page-header__btn-autorization {
@@ -40,8 +81,33 @@
 
     @media (min-width: $tablet-width) {
         display: block;
+        padding: 14px 30px;
         border: 0;
         background-color: transparent;
+        font-family: $text-fonts;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: $basic-black;
+        margin-right: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+        order: 4;
+        margin-right: 10px;
+    }
+}
+
+.page-header__btn-registration {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+        order: 5;
+        display: block;
+        background-color: transparent;
+        border: 1px solid $btn-auth-border;
+        border-radius: 12px;
+        padding: 14px 30px;
         font-family: $text-fonts;
         font-weight: 500;
         font-size: 18px;
@@ -50,19 +116,39 @@
     }
 }
 
-.page-header__btn-registration {
-    display: none;
+.page-header__toggle {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+
+    &-icon {
+        display: block;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    &-icon--close {
+        width: 20px;
+        height: 20px;
+        background-image: url('../assets/img/close.svg');
+    }
+
+    &-icon--open {
+        width: 30px;
+        height: 30px;
+        background-image: url('../assets/img/hamburger.svg');
+    }
 
     @media (min-width: $desktop-width) {
-        display: block;
-        background-color: transparent;
-        border: 1px solid $btn-auth-border;
-        border-radius: 12px;
-        padding: 14px 30px;
-        font-family: $text-fonts;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
-    color: $basic-black;
+        display: none;
+    }
+}
+
+.page-header__main-nav {
+    @media (min-width: $desktop-width) {
+        order: 2;
     }
 }
