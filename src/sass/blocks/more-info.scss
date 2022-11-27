@@ -1,0 +1,32 @@
+.more-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.more-info__link {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px;
+    background-color: $basic-yellow;
+    font-family: $text-fonts;
+    font-weight: 600;
+    color: $basic-black;
+    border-radius: 12px;
+    margin-right: 8px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &--sell {
+        background-color: $btn-grey;
+    }
+
+    @media (min-width: $tablet-width) {
+        padding: 22px;
+        font-size: 18px;
+        line-height: 21px;
+        margin-right: 20px;
+    }
+}

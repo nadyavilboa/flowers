@@ -2,16 +2,26 @@
 
 $title-fonts: 'Marmelad', sans-serif;
 $text-fonts: 'Raleway', sans-serif;
+$special-fonts: 'Roboto', sans-serif;
+$small-text-fonts: 'PT Sans', sans-serif;
 
 //Viewports
 $mobile-width: 320px;
-$tablet-width: 880px;
-$desktop-width: 1280px;
+$tablet-width: 768px;
+$desktop-width: 1366px;
+$lg-desktop-width: 1600px;
 
 // Colors global
-
-$basic-white: #ffffff;
+$basic-white: #FFFBED;
 $basic-black: #372E11;
-$basic-blue: #FFE182;
+$basic-yellow: #FFE182;
 
 // Colors special
+$btn-auth-border: #000;
+$footer-bg: #372E11;
+$not-active: #9B9B99;
+$btn-grey: #EDEDED;
+$input-bg: #FFF8E1;
+$input-color: #8E825C;
+$all-right: #B9B3B3;
+$bg-checkbox: #0E493F;

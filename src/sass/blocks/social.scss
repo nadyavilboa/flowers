@@ -1,0 +1,26 @@
+.social {
+    margin-bottom: 48px;
+
+    @media (min-width: $tablet-width) {
+        order: 3;
+    }
+
+    @media (min-width: $desktop-width) {
+        order: 2;
+    }
+}
+
+.social__link {
+    display: block;
+    font-family: $text-fonts;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFBED;
+    padding: 5px 0;
+    margin-bottom: 16px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

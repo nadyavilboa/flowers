@@ -1,0 +1,68 @@
+.page-header {
+    padding: 8px 0;
+}
+
+.page-header__logo img {
+    width: 48px;
+    height: 42px;
+
+    @media (min-width: $tablet-width) {
+        width: 98px;
+        height: 86px;
+    }
+}
+
+.page-header__company-phone {
+    font-family: $special-fonts;
+}
+
+.page-header__company-phone,
+.page-header__language-change {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: $basic-black;
+
+    @media (min-width: $tablet-width) {
+        font-size: 20px;
+        line-height: 23px;
+    }
+}
+
+.page-header__language-change {
+    display: flex;
+    align-items: center;
+    font-family: $text-fonts;
+}
+
+.page-header__btn-autorization {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        font-family: $text-fonts;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: $basic-black;
+    }
+}
+
+.page-header__btn-registration {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+        display: block;
+        background-color: transparent;
+        border: 1px solid $btn-auth-border;
+        border-radius: 12px;
+        padding: 14px 30px;
+        font-family: $text-fonts;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: $basic-black;
+    }
+}

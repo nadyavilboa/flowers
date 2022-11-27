@@ -1,0 +1,12 @@
+.language-change__item {
+    color: $not-active;
+    margin-right: 8px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &--active {
+        color: $basic-black;
+    }
+}

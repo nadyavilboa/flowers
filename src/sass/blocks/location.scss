@@ -1,0 +1,44 @@
+.location {
+    margin-bottom: 48px;
+
+    @media (min-width: $desktop-width) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: min-content 1fr;
+        grid-gap: 0 35px;
+    }
+}
+
+.location__item {
+    margin-bottom: 16px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+        order: 2;
+        grid-row-start: 2;
+    }
+
+    &--rostov {
+        @media (min-width: $desktop-width) {
+            order: 1;
+        }
+    }
+}
+
+.location__item,
+.location__office-phone {
+    font-family: $text-fonts;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: $basic-white;
+}
+
+.location__office-name,
+.location__office-adress {
+    margin-top: 0;
+    margin-bottom: 0;
+}
