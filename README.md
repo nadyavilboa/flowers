@@ -7,5 +7,5 @@
   <li><b>npm run start</b></li>
 </ol>
 
-<p><b>Публичная версия<b> для просмотра в любых браузерах доступна по <a href="https://nadyavilboa.github.io/flowers-public/">ссылке</a></p>
+<p><b>Публичная версия</b> для просмотра в любых браузерах доступна по <a href="https://nadyavilboa.github.io/flowers-public/">ссылке</a></p>
 <p align="right">Author: Nadezhda Vilboa</p>
