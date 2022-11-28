@@ -1,12 +1,22 @@
 .more-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .more-info__link {
-    display: inline-flex;
-    align-items: center;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+            display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+            align-items: center;
     padding: 12px;
     background-color: $basic-yellow;
     font-family: $text-fonts;
@@ -14,6 +24,24 @@
     color: $basic-black;
     border-radius: 12px;
     margin-right: 8px;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: rgba($basic-white, 0.3);
+        -webkit-transition: all 1.5s ease-in-out;
+        -o-transition: all 1.5s ease-in-out;
+                transition: all 1.5s ease-in-out;
+    }
+
+    &:hover::before {
+        width: 100%;
+    }
 
     &:last-child {
         margin-right: 0;

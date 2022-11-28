@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/nadyavilboa/flowers#readme",
   "dependencies": {
+    "autoprefixer": "^10.4.13",
     "css-loader": "^6.7.2",
     "sass": "^1.56.1",
     "sass-loader": "^13.2.0",

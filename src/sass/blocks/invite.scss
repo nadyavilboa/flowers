@@ -1,25 +1,35 @@
 .invite {
     background: url("../assets/img/background-1-mobile.png") no-repeat;
     background-size: contain;
-    background-position: center;
+    background-position: center 30px;
     padding: 90px 0 152px;
 
     @media (min-width: $tablet-width) {
         background: url("../assets/img/background-1-tablet.png") no-repeat;
-        background-size: 110%;
-        background-position: center;
-        padding: 80px 0 207px;
+        background-position: center 70px;
+        padding: 180px 0 207px;
     }
 
     @media (min-width: $desktop-width) {
         background: url("../assets/img/background-1.jpg") no-repeat;
-        background-size: 105%;
-        padding: 106px 0 231px;
+        background-size: 110% 100%;
+        padding: 206px 0 231px;
+    }
+
+    @media (min-width: $lg-desktop-width) {
+        background-size: 100% 110%;
     }
 }
 
 .invite__wrapper {
+    max-width: 400px;
+
+    @media (min-width: $tablet-width) {
+        max-width: 600px;
+    }
+
     @media (min-width: $desktop-width) {
+        max-width: 1140px;
         padding: 0 175px;
     }
 }

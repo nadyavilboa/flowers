@@ -2,10 +2,14 @@
     margin-bottom: 48px;
 
     @media (min-width: $desktop-width) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: min-content 1fr;
-        grid-gap: 0 35px;
+        display: -ms-grid;  
+                display: grid;
+        -ms-grid-columns: 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
+        -ms-grid-rows: min-content 1fr;
+                grid-template-rows: min-content 1fr;
+        -ms-grid-gap: 0 35px;
+                grid-gap: 0 35px;
     }
 }
 
@@ -17,13 +21,18 @@
     }
 
     @media (min-width: $desktop-width) {
-        order: 2;
-        grid-row-start: 2;
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+                order: 2;
+        -ms-grid-row: 2;
+                grid-row-start: 2;
     }
 
     &--rostov {
         @media (min-width: $desktop-width) {
-            order: 1;
+            -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                    order: 1;
         }
     }
 }
