@@ -9,6 +9,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'index.js',
+        assetModuleFilename: '[name][ext]'
     },
     devServer: {
         port: 9000,

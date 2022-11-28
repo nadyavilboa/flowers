@@ -1,0 +1,53 @@
+.location {
+    margin-bottom: 48px;
+
+    @media (min-width: $desktop-width) {
+        display: -ms-grid;  
+                display: grid;
+        -ms-grid-columns: 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
+        -ms-grid-rows: min-content 1fr;
+                grid-template-rows: min-content 1fr;
+        -ms-grid-gap: 0 35px;
+                grid-gap: 0 35px;
+    }
+}
+
+.location__item {
+    margin-bottom: 16px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+                order: 2;
+        -ms-grid-row: 2;
+                grid-row-start: 2;
+    }
+
+    &--rostov {
+        @media (min-width: $desktop-width) {
+            -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                    order: 1;
+        }
+    }
+}
+
+.location__item,
+.location__office-phone {
+    font-family: $text-fonts;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: $basic-white;
+}
+
+.location__office-name,
+.location__office-adress {
+    margin-top: 0;
+    margin-bottom: 0;
+}
